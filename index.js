@@ -1,15 +1,11 @@
-const fi = (function() {
-  return {
-    libraryMethod: function() {
-      return 'Start by reading https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0'
-    },
+
 const fi = (function () {
     return {
         libraryMethod: function () {
             return 'Start by reading https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0'
         },
 
-    each: function() {
+
         each: function (collection, callback) {
             for (let key in collection) {
                 callback(collection[`${key}`], key, collection)
@@ -17,7 +13,7 @@ const fi = (function () {
             return collection
         },
 
-    },
+
         map: function (collection, callback) {
             let newCollection = []
             for (let key in collection) {
@@ -26,7 +22,7 @@ const fi = (function () {
             return newCollection
         },
 
-    map: function() {
+
         reduce: function (collection, callback, acc) {
             let i;
             if (!acc) {
@@ -41,7 +37,7 @@ const fi = (function () {
             return acc
         },
 
-    },
+
         find: function (collection, predicate) {
             let result = undefined;
             for (let i = 0; i < collection.length; i++) {
@@ -53,7 +49,7 @@ const fi = (function () {
             return result
         },
 
-    reduce: function() {
+  
         filter: function (collection, predicate) {
             let result = [];
             for (let i = 0; i < collection.length; i++) {
@@ -64,7 +60,6 @@ const fi = (function () {
             return result
         },
 
-    },
         size: function (collection) {
             let counter = 0;
             for (let item in collection) {
@@ -73,7 +68,7 @@ const fi = (function () {
             return counter
         },
 
-    functions: function() {
+
         first: function (array, n) {
             if (!n) {
                 return array[0]
@@ -85,7 +80,7 @@ const fi = (function () {
             return result
         },
 
-    },
+  
         last: function (array, n) {
             if (!n) {
                 return array[array.length - 1]
@@ -108,7 +103,7 @@ const fi = (function () {
             return result
         },
 
-  }
+
         sortBy: function (array, callback) {
             let newArr = [...array]
             function compare(a, b) {
