@@ -49,7 +49,7 @@ const fi = (function () {
             return result
         },
 
-  
+
         filter: function (collection, predicate) {
             let result = [];
             for (let i = 0; i < collection.length; i++) {
@@ -80,7 +80,7 @@ const fi = (function () {
             return result
         },
 
-  
+
         last: function (array, n) {
             if (!n) {
                 return array[array.length - 1]
